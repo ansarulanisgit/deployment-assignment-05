@@ -17,7 +17,7 @@
                     <img class="img-fluid rounded mt-2" src="images/money2.jpg" alt="Money">
                 </div>
                 <div class="col-md-7 px-5">
-                    <form action="" class="px-5">
+                    <div class="form px-5">
                         <h3 class="text-center my-3">Income:</h3>
                         <div class="row">
                             <div class="col-4 text-end">
@@ -25,6 +25,7 @@
                             </div>
                             <div class="col-8 ">
                                 <input type="text" id="income" placeholder="Input Income">
+                                <p class="text-danger error" id="income-error">Please input positive number. Text or negative number isn't acceptable.</p>
                             </div>
                         </div> 
 
@@ -35,6 +36,7 @@
                             </div>
                             <div class="col-8">
                                 <input type="text" id="food" placeholder="Input Expense">
+                                <p class="text-danger error" id="food-error">Please input positive number. Text or negative number isn't acceptable.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -43,6 +45,7 @@
                             </div>
                             <div class="col-8">
                                 <input type="text" id="rent" placeholder="Input Expense">
+                                <p class="text-danger error" id="rent-error">Please input positive number. Text or negative number isn't acceptable.</p>
                             </div>
                         </div>
                         <div class="row">
@@ -51,32 +54,38 @@
                             </div>
                             <div class="col-8">
                                 <input type="text" id="clothes" placeholder="Input Expense">
+                                <p class="text-danger error" id="clothes-error">Please input positive number. Text or negative number isn't acceptable.</p>
                             </div>
                         </div>
                         <div class="text-center mb-4">
                             <button class="ms-3" id="calculate">Calculate</button>
-                            <p>Total Expenses: <span id="total-expenses">1200</span> Taka</p>
-                            <p>Balance: <span id="balance">500</span> Taka</p>
+                            <p class="text-danger error" id="income-expense-error">There is some errors or your income is lower than your total expenses. Please check & try again.</p>
+                            <div id="details-part">
+                                <p>Total Expenses: <span id="total-expenses">00</span> Taka</p>
+                                <p>Balance: <span id="balance">00</span> Taka</p>
+                            </div>
                         </div>
                         <div class="row my-3">
                             <div class="col-2">
                                 <p>Save:</p>
                             </div>
                             <div class="col-5">
-                                <input type="text" style="width: 150px" id="save-percent" placeholder="Percentage">
+                                <input type="text" style="width: 150px" id="save-percent" placeholder="Percentage">   
                             </div>
                             <div class="col-1">
                                 <p>%</p>
                             </div>
                             <div class="col-4">
-                                <button style="width: 120px" id="save-button">Save</button>
+                                <button style="width: 120px" id="save-button"> Save </button>
                             </div>
+                            <p class="text-danger error text-center" id="save-error">Please input positive number. Text or negative number isn't acceptable.</p>
+                            <p class="text-danger error text-center" id="percentage-error">You can't save more than your amount of balance.</p>
                         </div>
                         <div class="text-center mt-4">
-                            <p>Saving Amount: <span id="saving-amount">1200</span> Taka</p>
-                            <p>Remaining Balance: <span id="remaining-balance">500</span> Taka</p>
+                            <p>Saving Amount: <span id="saving-amount">00</span> Taka</p>
+                            <p>Remaining Balance: <span id="remaining-balance">00</span> Taka</p>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
         </div>

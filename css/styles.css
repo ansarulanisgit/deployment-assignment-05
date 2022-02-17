@@ -8,7 +8,6 @@ header, footer{
     text-align: center;
 }
 
-
 button, input {
     padding: 5px 10px;
     margin-bottom: 10px;
@@ -22,12 +21,17 @@ button{
     font-size: 18px;
 }
 
-form{
+.form{
     background: rgba(114, 114, 253, 0.541);
     padding: 20px;
     border-radius: 10px;
 }
-form p{
+p{
     font-size: 20px;
     line-height: 20px;
+}
+
+.error{
+    display: none;
+    font-size: 16px;
 }
