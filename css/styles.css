@@ -1,3 +1,4 @@
+/* Body styles */
 body{
     background-color: rgba(2, 2, 163, 0.781);
     color: #ffffff;
@@ -5,7 +6,7 @@ body{
 }
 
 
-
+/* Header Footer */
 header, footer{
     text-align: center;
 }
@@ -26,6 +27,7 @@ button{
     font-size: 18px;
 }
 
+/* Form Style */
 .formfield{
     background: rgba(114, 114, 253, 0.541);
     padding: 20px;
@@ -41,3 +43,8 @@ p{
     font-size: 16px;
 }
 
+@media screen and (max-width:500px){
+    .formfield{
+        text-align: center !important;
+    }
+}
