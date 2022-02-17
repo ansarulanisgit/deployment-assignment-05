@@ -14,6 +14,9 @@ button, input {
     border-radius: 5px;
     border: 0;
 }
+input{
+    max-width: 100%;
+}
 button{
     background: #3d89fc;
     color: #fff;
@@ -21,14 +24,14 @@ button{
     font-size: 18px;
 }
 
-.form{
+.formfield{
     background: rgba(114, 114, 253, 0.541);
     padding: 20px;
     border-radius: 10px;
 }
 p{
-    font-size: 20px;
-    line-height: 20px;
+    font-size: 18px;
+    line-height: 24px;
 }
 
 .error{

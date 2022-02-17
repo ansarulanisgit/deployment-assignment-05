@@ -61,9 +61,11 @@ document.getElementById('save-button').addEventListener('click', function(){
     const savePercentage = getInputValue('save-percent', 'save-error');
     if(savePercentage>100){
         displayBlock('percentage-error');
+        displayNone('saving-part');
     }
     else{
         displayNone('percentage-error');
+        displayBlock('saving-part');
         const getBalanceField = document.getElementById('balance');
         const getBalanceText = getBalanceField.innerText;
         const currentBalance = parseFloat(getBalanceText);
