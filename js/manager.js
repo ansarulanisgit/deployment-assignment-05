@@ -71,10 +71,5 @@ document.getElementById('save-button').addEventListener('click', function(){
         const remainingBalance = currentBalance-savingAmount;
         setInnerText('saving-amount', savingAmount);
         setInnerText('remaining-balance', remainingBalance);
-
-        console.log(savingAmount);
-        console.log(remainingBalance);
-
-
     }
 })
