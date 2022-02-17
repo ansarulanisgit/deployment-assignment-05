@@ -9,9 +9,77 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header><h1>My Money Manager</h1></header>
+    <header><h1>Anis's <span class="text-danger">Money Manager</span> </h1></header>
     <main>
-        
+        <div class="container m-5">
+            <div class="row m-5">
+                <div class="col-md-5">
+                    <img class="img-fluid rounded mt-2" src="images/money2.jpg" alt="Money">
+                </div>
+                <div class="col-md-7 px-5">
+                    <form action="" class="px-5">
+                        <h3 class="text-center my-3">Income:</h3>
+                        <div class="row">
+                            <div class="col-4 text-end">
+                                <p>Income:</p>
+                            </div>
+                            <div class="col-8 ">
+                                <input type="text" id="income" placeholder="Input Income">
+                            </div>
+                        </div> 
+
+                        <h3 class="text-center my-3">Expenses</h3>
+                        <div class="row">
+                            <div class="col-4 text-end">
+                                <p>Food:</p>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="food" placeholder="Input Expense">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-end">
+                                <p>Rent:</p>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="rent" placeholder="Input Expense">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-end">
+                                <p>Clothes: </p>
+                            </div>
+                            <div class="col-8">
+                                <input type="text" id="clothes" placeholder="Input Expense">
+                            </div>
+                        </div>
+                        <div class="text-center mb-4">
+                            <button class="ms-3" id="calculate">Calculate</button>
+                            <p>Total Expenses: <span id="total-expenses">1200</span> Taka</p>
+                            <p>Balance: <span id="balance">500</span> Taka</p>
+                        </div>
+                        <div class="row my-3">
+                            <div class="col-2">
+                                <p>Save:</p>
+                            </div>
+                            <div class="col-5">
+                                <input type="text" style="width: 150px" id="save-percent" placeholder="Percentage">
+                            </div>
+                            <div class="col-1">
+                                <p>%</p>
+                            </div>
+                            <div class="col-4">
+                                <button style="width: 120px" id="save-button">Save</button>
+                            </div>
+                        </div>
+                        <div class="text-center mt-4">
+                            <p>Saving Amount: <span id="saving-amount">1200</span> Taka</p>
+                            <p>Remaining Balance: <span id="remaining-balance">500</span> Taka</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
         <p>Created by Ansarul Anis</p>
