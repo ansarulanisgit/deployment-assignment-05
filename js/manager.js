@@ -59,7 +59,7 @@ document.getElementById('calculate').addEventListener('click', function(){
 
 document.getElementById('save-button').addEventListener('click', function(){
     const savePercentage = getInputValue('save-percent', 'save-error');
-    if(savePercentage>100){
+    if(savePercentage>100 || savePercentage<0){
         displayBlock('percentage-error');
         displayNone('saving-part');
     }
